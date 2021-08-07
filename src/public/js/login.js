@@ -7,7 +7,7 @@ $(document).ready(function () {
 		if ($.trim(username).length > 0 && $.trim(password).length > 0) {
 			$.ajax({
 				type: "POST",
-				url: "ajaxLogin.php",
+				url: "./ajaxLogin.php",
 				data: dataString,
 				cache: false,
 				beforeSend: function () { $("#login").val('Connecting...'); },
